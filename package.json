@@ -1,6 +1,6 @@
 {
     "name": "progressive-loadable",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "React Component to used with react-loadable to prohgressevly hydrate.",
     "main": "dist/index.js",
     "directories": {
