@@ -1,0 +1,74 @@
+{
+    "name": "progressive-loadable",
+    "version": "0.8.0",
+    "description": "React Component to used with react-loadable to prohgressevly hydrate.",
+    "main": "dist/index.js",
+    "directories": {
+        "lib": "dist"
+    },
+    "scripts": {
+        "dev": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules --out-dir ./dist --source-maps inline --verbose --watch ",
+        "build": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules --out-dir ./dist",
+        "publish": "npm run build && npm publish",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Camilo Tapia <camilo.tapia@24hr.se>",
+    "license": "MIT",
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "commonjs": true,
+            "es6": true,
+            "node": true,
+            "mocha": true
+        },
+        "parser": "babel-eslint",
+        "extends": "eslint:recommended",
+        "parserOptions": {
+            "ecmaFeatures": {
+                "experimentalObjectRestSpread": true
+            },
+            "sourceType": "module",
+            "ecmaVersion": "2017"
+        },
+        "plugins": [],
+        "rules": {
+            "indent": [
+                "error",
+                4,
+                {
+                    "SwitchCase": 1
+                }
+            ],
+            "linebreak-style": [
+                "error",
+                "unix"
+            ],
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ],
+            "camelcase": 1
+        }
+    },
+    "dependencies": {},
+    "peerDependencies": {
+        "prop-types": "=>16",
+        "react": ">=16",
+        "react-dom": ">=16",
+        "react-loadable": ">=5"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/plugin-proposal-export-default-from": "^7.2.0",
+        "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-react": "^7.0.0"
+    }
+}
