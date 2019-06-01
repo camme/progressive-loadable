@@ -44,11 +44,12 @@ const LoadableComponent = Loadable({
   loading: Loading,
 });
 
+// THIS IS THE EXTRA WRAPPER
 const ProgressiveLoadableComponent = ProgressiveLoadable(LoadableComponent);
  
 export default class App extends React.Component {
   render() {
-    return <ProgressiveLoadable/>;
+    return <ProgressiveLoadable/>; // THIS IS CHANGED AS WELL
   }
 }
 
