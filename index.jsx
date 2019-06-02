@@ -1,5 +1,5 @@
 import React from 'react';
-import IntersectionObserver from './intersection-observer';
+import IntersectionObserver from 'react-rawb-intersection-observer';
 
 const ProgressiveLoadable = (LoadableComponent, options = { threshold: .3 }) => {
 

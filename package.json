@@ -1,14 +1,14 @@
 {
     "name": "progressive-loadable",
-    "version": "0.8.1",
+    "version": "0.8.2",
     "description": "React Component to used with react-loadable to prohgressevly hydrate.",
     "main": "dist/index.js",
     "directories": {
         "lib": "dist"
     },
     "scripts": {
-        "dev": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules --out-dir ./dist --source-maps inline --verbose --watch ",
-        "build": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules --out-dir ./dist",
+        "dev": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules,babel.config.js --out-dir ./dist --source-maps inline --verbose --watch ",
+        "build": "rm -rf dist && ./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules.babel.config.js --out-dir ./dist",
         "publish": "npm run build && npm publish",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -55,7 +55,9 @@
             "camelcase": 1
         }
     },
-    "dependencies": {},
+    "dependencies": {
+        "react-rawb-intersection-observer": "^1.0.0"
+    },
     "peerDependencies": {
         "prop-types": "=>16",
         "react": ">=16",

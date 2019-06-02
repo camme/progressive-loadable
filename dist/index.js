@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _intersectionObserver = _interopRequireDefault(require("./intersection-observer"));
+var _reactRawbIntersectionObserver = _interopRequireDefault(require("react-rawb-intersection-observer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -73,7 +73,7 @@ var ProgressiveLoadable = function ProgressiveLoadable(LoadableComponent) {
           });
         }
 
-        return _react.default.createElement(_intersectionObserver.default, {
+        return _react.default.createElement(_reactRawbIntersectionObserver.default, {
           root: ".main-content",
           onVisible: this.visible.bind(this),
           threshold: options.threshold
