@@ -6,7 +6,7 @@ to enable code splitting.
 Code splitting and progressive hydration are extremly effective tricks to downsize the first chunks of javascript you load in the browser, but still 
 showing the correct content the user loads into the browser (with server side rendering).
 
-So instead of just ser ver side render and then hydrate everything, 
+So instead of just server side render and then hydrate everything, 
 you render everything on the server, then hydrate the parst that are visible and wait with everything that is outside the viewport until the user scrolls. 
 When your component is visible, you load the chunks and hydrate the last part.
 
@@ -79,5 +79,5 @@ export default class App extends React.Component {
 
 ## Other info
 
-This uses the IntersectionObserver, which doesnt exists in ie 11. In ie11, or other browsers without the IntersectionObserver, it will just assume the component
+This uses the IntersectionObserver, which doesnt exists in ie 11. In ie 11, or other browsers without the IntersectionObserver, it will just assume the component
 is in the viewport.
