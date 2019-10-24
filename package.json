@@ -1,18 +1,18 @@
 {
-    "name": "progressive-loadable",
-    "version": "0.8.2",
+    "name": "@24hr/progressive-loadable",
+    "version": "1.0.8",
     "description": "React Component to used with react-loadable to prohgressevly hydrate.",
     "main": "dist/index.js",
     "directories": {
         "lib": "dist"
     },
     "scripts": {
-        "dev": "./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules,babel.config.js --out-dir ./dist --source-maps inline --verbose --watch ",
-        "build": "rm -rf dist && ./node_modules/@babel/cli/bin/babel.js . --ignore dist,dev,node_modules.babel.config.js --out-dir ./dist",
-        "publish": "npm run build && npm publish",
+        "dev": "./node_modules/@babel/cli/bin/babel.js ./src --ignore dist,dev,node_modules,babel.config.js --out-dir ./dist --source-maps inline --verbose --watch ",
+        "build": "rm -rf dist && ./node_modules/@babel/cli/bin/babel.js ./src --ignore dist,dev,node_modules.babel.config.js --out-dir ./dist",
+        "prepublish": "npm run build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Camilo Tapia <camilo.tapia@24hr.se>",
+    "author": "Camilo Tapia <camilo.tapia@gmail.com>",
     "license": "MIT",
     "eslintConfig": {
         "env": {
@@ -56,7 +56,7 @@
         }
     },
     "dependencies": {
-        "react-rawb-intersection-observer": "^1.0.0"
+        "react-rawb-intersection-observer": "^1.0.1"
     },
     "peerDependencies": {
         "prop-types": "=>16",
@@ -65,12 +65,12 @@
         "react-loadable": ">=5"
     },
     "devDependencies": {
-        "@babel/cli": "^7.4.4",
-        "@babel/core": "^7.4.4",
-        "@babel/plugin-proposal-class-properties": "^7.4.4",
-        "@babel/plugin-proposal-export-default-from": "^7.2.0",
-        "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
-        "@babel/preset-env": "^7.4.4",
-        "@babel/preset-react": "^7.0.0"
+        "@babel/cli": "^7.6.4",
+        "@babel/core": "^7.6.4",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/plugin-proposal-export-default-from": "^7.5.2",
+        "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/preset-react": "^7.6.3"
     }
 }
